@@ -1,0 +1,19 @@
+{
+  "name": "rahulmoral",
+  "version": "1.0.0",
+  "description": "Personal portfolio website.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahulMoral/rahulmoral.git"
+  },
+  "author": "Rahul Moral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RahulMoral/rahulmoral/issues"
+  },
+  "homepage": "https://github.com/RahulMoral/rahulmoral#readme"
+}
