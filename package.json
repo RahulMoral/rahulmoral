@@ -1,19 +1,30 @@
 {
-  "name": "rahulmoral",
-  "version": "1.0.0",
-  "description": "Personal portfolio website.",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RahulMoral/rahulmoral.git"
-  },
-  "author": "Rahul Moral",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RahulMoral/rahulmoral/issues"
-  },
-  "homepage": "https://github.com/RahulMoral/rahulmoral#readme"
+	"name": "rahulmoral",
+	"version": "1.0.0",
+	"description": "Personal portfolio website.",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RahulMoral/rahulmoral.git"
+	},
+	"devDependencies": {
+		"autoprefixer": "^7.2.2",
+		"gulp": "^3.9.1",
+		"gulp-sass": "^3.1.0",
+		"gulp-livereload": "^3.8.1",
+		"gulp-postcss": "^7.0.0",
+		"sass-rem": "^2.0.0"
+	},
+	"author": "Rahul Moral",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/RahulMoral/rahulmoral/issues"
+	},
+	"homepage": "https://github.com/RahulMoral/rahulmoral#readme",
+	"dependencies": {
+		"bootstrap": "^4.0.0-alpha.6"
+	}
 }
