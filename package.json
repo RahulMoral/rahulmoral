@@ -11,12 +11,17 @@
 		"url": "git+https://github.com/RahulMoral/rahulmoral.git"
 	},
 	"devDependencies": {
-		"autoprefixer": "^7.2.2",
 		"gulp": "^3.9.1",
 		"gulp-sass": "^3.1.0",
 		"gulp-livereload": "^3.8.1",
+		"autoprefixer": "^7.2.3",
 		"gulp-postcss": "^7.0.0",
-		"sass-rem": "^2.0.0"
+		"bootstrap-v4-dev": "^4.0.0-alpha.6",
+		"material-design-iconic-font": "^2.2.0",
+		"postcss-pixels-to-rem": "^0.8.0",
+		"gulp-csscomb": "^3.0.8",
+		"jquery": "^3.2.1",
+		"tether": "^1.4.3"
 	},
 	"author": "Rahul Moral",
 	"license": "ISC",

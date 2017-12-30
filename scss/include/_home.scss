@@ -1,0 +1,24 @@
+.rm-header-banner{
+    background-color: $color-grey;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    .rm-header-banner-wrapper{
+        background-color: $color-pattens-blue;
+        border-radius: 5px;
+        padding: 30px 15px;
+        .image-box{
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            &:after{
+                background-image: linear-gradient(135deg, rgba(69, 90, 100, 0.75) 50%, rgba(69, 90, 100, 0.85) 100%);
+                content: '';
+                left: 0;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+    }
+}

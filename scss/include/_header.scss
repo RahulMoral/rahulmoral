@@ -1,0 +1,120 @@
+.main-menu{
+    //background-color: $color-san-juan;
+    background-image: linear-gradient(290deg, $color-san-juan 30%, $color-pattens-blue 100%);
+    border-bottom: 1px solid $color-silver;
+    //box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.25);
+    @include media-breakpoint-down(lg){
+        background-image: linear-gradient(-290deg, $color-san-juan 30%, $color-pattens-blue 100%);
+    }
+    .navbar{
+        padding-bottom: 0;
+        padding-top: 0;
+        width: 100%;
+        .navbar-toggler{
+            border-color: $color-grey;
+            border-radius: 2px;
+            color: $color-grey;
+            height: 40px;
+            top: 5px;
+        }
+        .navbar-brand{
+            color: $color-hoki;
+            @include font-spirax;
+            font-size: 26px;
+            height: 40px;
+            width: 140px;
+            @include media-breakpoint-down(lg){
+                color: $color-white;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+        }
+        .navbar-collapse{
+            @include media-breakpoint-down(lg){
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        align-items: center;
+                        color: $color-white;
+                        display: flex;
+                        flex-direction: row;
+                        @include font-kelly-slab;
+                        font-size: 15px;
+                        height: 40px;
+                        justify-content: start;
+                        letter-spacing: 1px;
+                        padding: 0 16px;
+                        position: relative;
+                        text-transform: uppercase;
+                        transition: color 0.3s ease-in-out 0s;
+                        @include media-breakpoint-up(lg){
+                            padding: 0;
+                        }
+                        &:after{
+                            background-image: linear-gradient(to right, $color-grey 50%, $color-pattens-blue 100%);
+                            bottom: 0;
+                            content: '';
+                            height: 2px;
+                            left: 0;
+                            position: absolute;
+                            transition: width 0.3s ease-in-out 0s;
+                            width: 0;
+                        }
+                        &:before{
+                            background-image: linear-gradient(to left, $color-grey 50%, $color-pattens-blue 100%);
+                            content: '';
+                            bottom: 0;
+                            height: 2px;
+                            right: 0;
+                            position: absolute;
+                            transition: width 0.3s ease-in-out 0s;
+                            width: 0;
+                        }
+                        &:hover,
+                        &:focus{
+                            background-color: transparent;
+                            color: $color-grey;
+                            &:after,
+                            &:before{
+                                width: 50%;
+                            }
+                        }
+                        &.active{
+                            background-color: transparent;
+                            color: $color-grey;
+                            &:after{
+                                width: 50%;
+                            }
+                            &:before{
+                                width: 50%;
+                            }
+                        }
+                    }
+                    &:not(:last-child){
+                        @include media-breakpoint-down(lg){
+                            border-bottom: 1px solid $color-silver;
+                        }
+                        @include media-breakpoint-up(md){
+                            border-right: 1px solid $color-silver;
+                        }
+                        .nav-link{
+                            @include media-breakpoint-up(lg){
+                                padding-right: 20px;
+                            }
+                        }
+                    }
+                    &:not(:first-child){
+                        .nav-link{
+                            @include media-breakpoint-up(lg){
+                                padding-left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

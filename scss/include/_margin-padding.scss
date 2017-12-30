@@ -1,0 +1,108 @@
+$spaceamounts: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+
+        .p-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+
+        .p#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+@include media-breakpoint-up(sm){
+    @each $space in $spaceamounts {
+        @each $side in $sides {
+            .m#{str-slice($side, 0, 1)}-sm-#{$space} {
+                margin-#{$side}: #{$space}px !important;
+            }
+
+            .p#{str-slice($side, 0, 1)}-sm-#{$space} {
+                padding-#{$side}: #{$space}px !important;
+            }
+
+            .m-sm-#{$space} {
+                margin-#{$side}: #{$space}px !important;
+            }
+
+            .p-sm-#{$space} {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md){
+    @each $space in $spaceamounts {
+        @each $side in $sides {
+            .m#{str-slice($side, 0, 1)}-md-#{$space} {
+                margin-#{$side}: #{$space}px !important;
+            }
+
+            .p#{str-slice($side, 0, 1)}-md-#{$space} {
+                padding-#{$side}: #{$space}px !important;
+            }
+
+            .m-md-#{$space} {
+                margin-#{$side}: #{$space}px !important;
+            }
+
+            .p-md-#{$space} {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(lg){
+    @each $space in $spaceamounts {
+        @each $side in $sides {
+            .m#{str-slice($side, 0, 1)}-lg-#{$space} {
+                margin-#{$side}: #{$space}px !important;
+            }
+
+            .p#{str-slice($side, 0, 1)}-lg-#{$space} {
+                padding-#{$side}: #{$space}px !important;
+            }
+
+            .m-lg-#{$space} {
+                margin-#{$side}: #{$space}px !important;
+            }
+
+            .p-lg-#{$space} {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(xl){
+    @each $space in $spaceamounts {
+        @each $side in $sides {
+            .m#{str-slice($side, 0, 1)}-xl-#{$space} {
+                margin-#{$side}: #{$space}px !important;
+            }
+
+            .p#{str-slice($side, 0, 1)}-xl-#{$space} {
+                padding-#{$side}: #{$space}px !important;
+            }
+
+            .m-xl-#{$space} {
+                margin-#{$side}: #{$space}px !important;
+            }
+
+            .p-xl-#{$space} {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+    }
+}

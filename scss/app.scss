@@ -1,2 +1,10 @@
 //* Bootstrap 4 Alpha *//
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/material-design-iconic-font/scss/material-design-iconic-font.scss";
+@import "include/margin-padding.scss";
+@import "include/font-mixin.scss";
+@import "include/variable.scss";
+@import "include/global.scss";
+@import "include/header.scss";
+@import "include/footer.scss";
+@import "include/home.scss";

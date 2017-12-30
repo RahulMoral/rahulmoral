@@ -1,0 +1,16 @@
+@mixin font-kelly-slab{
+    font-family: 'Kelly Slab', cursive;
+    font-weight: 400;
+}
+@mixin font-spirax{
+    font-family: 'Spirax', cursive;
+    font-weight: 400;
+}
+@mixin font-ubuntu-regular{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+@mixin font-ubuntu-light{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}

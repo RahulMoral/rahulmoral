@@ -1,0 +1,37 @@
+*:focus{
+    outline: none !important;
+}
+*{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+body{
+    @include font-ubuntu-regular;
+    font-size: 16px;
+    line-height: 1.2;
+    position: relative;
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2{
+    @include font-kelly-slab;
+}
+h3,
+h4,
+h5,
+h6{
+    @include font-spirax;
+}
+p{
+    @include font-ubuntu-regular;
+}
+.container{
+    @include media-breakpoint-down(lg){
+        width: 100%;
+    }
+}
+main{
+    padding-top: 41px;
+}
